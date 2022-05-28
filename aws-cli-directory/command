@@ -1,0 +1,11 @@
+ami-093bb31988192c398
+subnet-0451b860cfca97c47
+PHRONESIS
+sg-04e3bc9baa57649f2
+aws ec2 run-instances  --image-id ami-093bb31988192c398 --instance-type t2.micro --count 1 --key-name PHRONESIS --subnet-id subnet-0451b860cfca97c47 --security-group-ids sg-04e3bc9baa57649f2
+InstanceId": "i-017e3a8768254f37d",
+PublicDnsName": "ec2-52-23-187-92.compute-1.amazonaws.com"
+PublicIpAddress": "52.23.187.92
+aws configure
+mv ~/.aws/credentials{,bk}
+cat ~/.aws/credentials
