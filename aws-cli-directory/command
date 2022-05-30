@@ -6,6 +6,30 @@ aws ec2 run-instances  --image-id ami-093bb31988192c398 --instance-type t2.micro
 InstanceId": "i-017e3a8768254f37d",
 PublicDnsName": "ec2-52-23-187-92.compute-1.amazonaws.com"
 PublicIpAddress": "52.23.187.92
-aws configure
+aws configure "to configure my aws inputing my access ID and secret key"
 mv ~/.aws/credentials{,bk}
 cat ~/.aws/credentials
+
+
+ssh-keygen -t ed25519 -C "your_email@example.com"     "to generate my ssh key"
+ssh-keygen -t rsa -b 4096 -C "email@email.com"    "this can also be used to generate ssh key"
+
+cat ~/.ssh/id_rsa.pub      "command to see my public key"
+
+Your identification has been saved in /c/Users/HP/.ssh/id_rsa
+Your public key has been saved in /c/Users/HP/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:JzlU5En5reE8aMhtYcXHctU+vqJP3CmRLIOwPeCAjAQ talkseyi@yahoo.com
+The key's randomart image is:
++---[RSA 4096]----+
+|E.       .+o . .o|
+|. o .    +..+ + .|
+| . o . o. oo = . |
+|      o.=.+ + o..|
+|       +SB.B *. .|
+|        o+* O o..|
+|         o   = o.|
+|            .... |
+|           .o..  |
++----[SHA256]-----+
+
