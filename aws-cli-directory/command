@@ -10,9 +10,12 @@ aws configure "to configure my aws inputing my access ID and secret key"
 mv ~/.aws/credentials{,bk}
 cat ~/.aws/credentials
 
-
+ls -al ~/.ssh    " to view existing private key, it will list the file in ssh directory"
 ssh-keygen -t ed25519 -C "your_email@example.com"     "to generate my ssh key"
 ssh-keygen -t rsa -b 4096 -C "email@email.com"    "this can also be used to generate ssh key"
+
+eval "$(ssh-agent -s)"   " to start the ssh agent"
+ssh-add ~/.ssh/id_rsa    " to add my ssh private key to the ssh agent"
 
 cat ~/.ssh/id_rsa.pub      "command to see my public key"
 
